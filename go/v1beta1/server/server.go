@@ -50,8 +50,10 @@ var (
 
 // StartGrafeas starts the Grafeas server, instantiating the storage of the type specified in the config.
 func StartGrafeas() error {
+	fmt.Println("starting grafeas server")
 	flag.Parse()
 	cfg, err := config.LoadConfig(*configFile)
+	fmt.Println("Address is: " cfg.API.Address)
 	if err != nil {
 		return status.Errorf(codes.Internal, "failed to load cfg file: %s", err)
 	}

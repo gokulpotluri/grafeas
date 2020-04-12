@@ -72,7 +72,7 @@ grafeas:
   # Grafeas api server config
   api:
     # Endpoint address
-    address: "0.0.0.0:8080"
+    address: "0.0.0.1:8080"
     # PKI configuration (optional)
     certfile:
     keyfile:
